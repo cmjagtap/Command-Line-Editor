@@ -1,5 +1,7 @@
 PWD_DIR = $(shell pwd)
 SRC_DIR = $(PWD_DIR)/src
+$(shell mkdir -p build)
+$(shell mkdir -p bin)
 BUILD_DIR = $(PWD_DIR)/build
 BIN_DIR = $(PWD_DIR)/bin
 INCLUDE_DIR = $(PWD_DIR)/include
