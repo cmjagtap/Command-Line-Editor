@@ -4,7 +4,7 @@ BUILD_DIR = $(PWD_DIR)/build
 BIN_DIR = $(PWD_DIR)/bin
 INCLUDE_DIR = $(PWD_DIR)/include
 
-CFLAGS = -g -Wall -Werror -Wextra -ansi -pedantic-errors -lreadline -I$(INCLUDE_DIR)
+CFLAGS = -g -Wall -Werror -Wextra -ansi -pedantic-errors -L lreadline -I$(INCLUDE_DIR)
 
 SRC_FILES = $(wildcard $(SRC_DIR)/*.c)
 OBJ_FILES = $(addprefix $(BUILD_DIR)/, $(notdir $(SRC_FILES:.c=.o)))
